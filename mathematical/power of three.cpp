@@ -15,3 +15,23 @@ public:
         
     }
 };
+
+//RETURN AS A STRING
+
+       string isPowerof3(int N){
+       string s="Yes";
+        if(N==1)
+        {
+            s="Yes";
+            return s;
+        }
+        if(N%3!=0 || N<=0)
+        {
+            s="No";
+            return s;
+        }
+        return isPowerof3(N/3);
+        
+        
+     // code here 
+    }
