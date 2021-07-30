@@ -10,6 +10,9 @@ class Solution {
 public:
     bool hasCycle(ListNode *head) {
      
+         if(head==NULL){
+        return false;
+    }
       
       struct ListNode*fast,*slow;
       fast=head;
